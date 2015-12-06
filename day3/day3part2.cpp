@@ -3,12 +3,8 @@
 #include <string>
 #include <array>
 #include <vector>
+#include "position.h"
 using namespace std;
-
-struct position {
-	int x;
-	int y;
-};
 
 int main() {
 	string line;

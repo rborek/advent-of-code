@@ -17,11 +17,7 @@ int main() {
 		while (getline(input_file, line)) {
 			position* mover;
 			for (string::size_type i = 0; i < line.size(); ++i) {
-				if (i % 2 == 0) {
-					mover = &santa;
-				} else {
-					mover = &robo_santa;
-				}
+				mover = (i % 2 == 0) ? &santa : &robo_santa;
 				if (line[i] == '^') {
 					mover->y++;
 				} else if (line[i] == 'v') {

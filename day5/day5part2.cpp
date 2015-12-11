@@ -10,16 +10,14 @@ bool IsNice(string str) {
 			has_spaced_repeat = true;
 		}
 	}
-	if (has_spaced_repeat == false) {
-		return false;
-	}
-	for (string::size_type i = 0; i < str.size() - 3; ++i) {
-		string couple = string(1, str[i]) + string(1, str[i+1]);
-		string to_search_first = str.substr(0, i);
-		string to_search_second = str.substr(i+2, str.size());
-		if (to_search_first.find(couple) != string::npos || to_search_second.find(couple) != string::npos) {
-			return true;
-		}
+	if (has_spaced_repeat) {
+		for (string::size_type i = 0; i < str.size() - 3; ++i) {
+			string couple = string(1, str[i]) + string(1, str[i+1]);
+			string to_search_first = str.substr(0, i);
+			string to_search_second = str.substr(i+2, str.size());
+			if (to_search_first.find(couple) != string::npos || to_search_second.find(couple) != string::npos) {
+				return true;
+			}
 	}
 	return false;
 }

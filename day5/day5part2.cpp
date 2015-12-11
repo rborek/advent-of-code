@@ -18,6 +18,7 @@ bool IsNice(string str) {
 			if (to_search_first.find(couple) != string::npos || to_search_second.find(couple) != string::npos) {
 				return true;
 			}
+		}
 	}
 	return false;
 }

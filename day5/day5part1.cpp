@@ -19,10 +19,8 @@ bool IsNice(string str) {
 			case 'e':
 			case 'i':
 			case 'o':
-			case 'u':
-			num_vowels++;
-			default:
-			break;
+			case 'u': num_vowels++;
+			default: break;
 		}
 	}
 	return has_repeat && num_vowels >= 3;

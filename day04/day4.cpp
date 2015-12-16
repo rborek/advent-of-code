@@ -23,4 +23,5 @@ int main() {
 	string secret_key = "bgvyzdsv";
 	cout << GetLowestIntForNZeroes(secret_key, 5) << endl;
 	cout << GetLowestIntForNZeroes(secret_key, 6) << endl;
+	return EXIT_SUCCESS;
 }

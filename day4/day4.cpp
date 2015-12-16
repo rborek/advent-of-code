@@ -20,7 +20,8 @@ int GetLowestIntForNZeroes(string secret_key, int n) {
 }
 
 int main() {
-	cout << GetLowestIntForNZeroes("bgvyzdsv", 5) << endl;
-	cout << GetLowestIntForNZeroes("bgvyzdsv", 6) << endl;
+	string secret_key = "bgvyzdsv";
+	cout << GetLowestIntForNZeroes(secret_key, 5) << endl;
+	cout << GetLowestIntForNZeroes(secret_key, 6) << endl;
 }
 
